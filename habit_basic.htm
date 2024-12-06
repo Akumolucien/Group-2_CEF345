@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habit Tracker App</title>
+    <link rel="stylesheet" href="habit_basic.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>My Habit Tracker</h1>
+        <section class="stats-summary">
+          <output id="total-habits">Total Habits: 0</output>
+          <output id="completed-habits">Completed: 0</output>
+        </section>
+      </header>
+
+      <section class="habit-input">
+        <h2>Add New Habit</h2>
+        <form id="habit-form">
+          <input
+            type="text"
+            id="habit-name"
+            placeholder="Enter habit name"
+            required
+          />
+          <select id="habit-frequency">
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+          </select>
+          <button type="submit">Add Habit</button>
+        </form>
+      </section>
+
+      <section class="habits-list">
+        <h2>My Habits</h2>
+        <article id="habits-container">
+          <!-- Habits will be dynamically added here by JavaScript -->
+        </article>
+      </section>
+
+      <section class="habit-analytics">
+        <h2>Habit Analytics</h2>
+        <aside class="analytics-grid">
+          <article class="analytics-card">
+            <h3>Completion Rate</h3>
+            <output id="completion-rate">0%</output>
+          </article>
+          <article class="analytics-card">
+            <h3>Longest Streak</h3>
+            <output id="longest-streak">0 days</output>
+          </article>
+        </aside>
+      </section>
+
+      <footer>
+        <p>&copy; 2024 Habit Tracker App</p>
+      </footer>
+    </main>
+
+    <script src="habit_tracker.js"></script>
+  </body>
+</html>
