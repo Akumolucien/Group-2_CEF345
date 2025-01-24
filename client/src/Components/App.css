@@ -1,0 +1,14 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    width: 100%;
+    background-color: #f0f0f0; /* Optional: Add a background color */
+  }
+
+ .portal-container {
+    width: 100%;
+    min-width: 800px; 
+    padding: 20px;
+  }
