@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(255, 255, 255, 0.692);  
+    font-family: sans-serif;
+    position: relative;
+}
+.home-page{  
+    text-align: center;
+    text-decoration: none;
+    /*background: url(./images/classroom.jpg);*/
+    backdrop-filter: blur(6px);
+    height: 80vh;
+    width: 100%; 
+    margin: 0; 
+    padding: 0;
+  }
+  
+ h1 {
+    font-size: 4rem;
+   padding: 15px 0;
+    text-decoration: none;
+  }
+  
+  .home-page p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  .quick-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .quick-links li {
+    margin-bottom: 10px;
+  }
+  
+  .quick-links a {
+    text-decoration: none;
+    color: #007bff; 
+  }
+  .second{
+   /* background: url(./images/book.png); */
+    height: 100vh;
+    width: 100%;
+    background-position-x: right;
+    background-size: 40%;
+    background-repeat: no-repeat;
+  }
+  .img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 10px;
+    width: 400px;
+    height: 50rem;
+    flex-wrap: wrap;
+}
+
+.nav{
+  height: 2rem;
+  display: flex; 
+  justify-content: center;
+  font-size: 1.2rem;
+  position: relative;
+}
+.active{
+  padding: 7px 5px;
+  align-content: center;
+}
+.above{
+  height: 150px;
+  background-color: #4db8f6;
+}
+
+#links{
+  height: 1.5rem;
+  width: 500px;
+  margin-right: 3rem;
+  font-weight: 600;
+  margin-left: 5px;
+  position: absolute;
+  top: 0;
+ 
+
+}
+#links ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#links li a{
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 7px 5px;
+  text-decoration: none;
+}  
+li:hover {
+  background-color: transparent;
+  margin-top: 6px;
+} 
+.grid{
+  display: grid;
+  grid-template: repeat(1, 280px) / repeat(3, 250px); 
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+.box{   
+     display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border: 1px solid gray;
+      width: 230px;
+      height: 200px;
+      border-radius: 8px;
+      background: linear-gradient(#4db8f6, white) ;
+}
+.box:hover{
+  box-shadow: 3px 3px 3px 3px gray;
+  translate: 5px;
+}
+
+.news-slider {
+  overflow: hidden;
+  position: relative;
+  height: 70vh;
+}
+
+.news-slider .slide-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative; /* To position the text overlay */
+}
+
+.news-slider .slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color: #fff; 
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+  padding: 10px; 
+}
+
+.news-slider .slider-container {
+  display: flex;
+  transition: transform 0.8s ease-in-out; 
+  justify-content: center;
+}
+
+.news-slider .slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  width: 100%;
+  height: 20px; 
+
+  top: 0;
+  left: 0;
+  transition: margin-left 0.5s ease-in-out;
+}
+
+.news-slider .slide img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+.news-slider .prev,
+.news-slider .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(#4db8f6, white) ;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid #4db8f6;
+  cursor: pointer;
+}
+
+.news-slider .prev {
+  left: 30px;
+}
+
+.news-slider .next {
+  right: 10px;
+}
+.featured-section h1{
+  text-align: center; 
+  font-size:x-large;
+}
