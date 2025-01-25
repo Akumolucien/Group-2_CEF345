@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Management System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>School Management System</h1>
+    </header>
+
+    <main>
+      <!-- Attendance Management -->
+      <section id="attendance">
+        <h2>Attendance Management</h2>
+        <form id="attendanceForm">
+          <label for="studentName">Student Name:</label>
+          <input type="text" id="studentName" required />
+          <label for="attendanceStatus">Status:</label>
+          <select id="attendanceStatus" required>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+          </select>
+          <button type="submit">Mark Attendance</button>
+        </form>
+        <h3>Attendance Records</h3>
+        <ul id="attendanceRecords"></ul>
+      </section>
+
+      <!-- Student Information Management -->
+      <section id="studentInfo">
+        <h2>Student Information</h2>
+        <form id="studentForm">
+          <label for="studentId">Student ID:</label>
+          <input type="text" id="studentId" required />
+          <label for="studentNameInfo">Name:</label>
+          <input type="text" id="studentNameInfo" required />
+          <label for="studentGrade">Grade:</label>
+          <input type="text" id="studentGrade" required />
+          <button type="submit">Add Student</button>
+        </form>
+        <h3>Student List</h3>
+        <table id="studentTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <!-- Fee Management -->
+      <section id="feeManagement">
+        <h2>Fee Management</h2>
+        <form id="feeForm">
+          <label for="feeStudentId">Student ID:</label>
+          <input type="text" id="feeStudentId" required />
+          <label for="feeAmount">Amount:</label>
+          <input type="number" id="feeAmount" required />
+          <button type="submit">Record Fee</button>
+        </form>
+        <h3>Fee Records</h3>
+        <ul id="feeRecords"></ul>
+      </section>
+
+      <!-- Timetable Scheduling -->
+      <section id="timetable">
+        <h2>Timetable Scheduling</h2>
+        <form id="timetableForm">
+          <label for="className">Class Name:</label>
+          <input type="text" id="className" required />
+          <label for="classTime">Time:</label>
+          <input type="text" id="classTime" required />
+          <button type="submit">Add Class</button>
+        </form>
+        <h3>Class Schedule</h3>
+        <ul id="timetableRecords"></ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
